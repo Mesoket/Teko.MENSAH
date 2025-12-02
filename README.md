@@ -1,2 +1,0 @@
-# Teko.MENSAH
-Mon portfolio
