@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header style="background: rgba(0, 0, 0, 0.2); backdrop-filter: brightness(0.5);">
+    <nav class="container flex-between" style="max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between;">
+      <h1>Teko MENSAH</h1>
+      <div>
+        <a href="index.html" style="color:#e0e6ed; margin-right:1rem; text-decoration:none;">Accueil</a>
+        <a href="about.html" style="color:#e0e6ed; margin-right:1rem; text-decoration:none;">À propos</a>
+        <a href="projects.html" style="color:#e0e6ed; margin-right:1rem; text-decoration:none;">Projets</a>
+        <a href="skills.html" style="color:#e0e6ed; margin-right:1rem; text-decoration:none;">CV</a>
+        <a href="contact.html" style="color:#e0e6ed; text-decoration:none;">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <section class="mt-5 mb-5">
+    <div class="container">
+      <h1 class="text-center mb-5">Contactez-moi</h1>
+
+      <div class="grid grid-2">
+
+
+        <!-- CONTACT FORM -->
+        <div>
+          <div style="background: var(--bg-secondary); padding: 2rem; border-radius: 10px; border-left: 4px solid var(--accent);">
+
+            <form id="contactForm" style="display: flex; flex-direction: column; gap: 1.5rem;">
+              
+              <div>
+                <label for="name" class="text-secondary" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Votre nom</label>
+                <input type="text" id="name" name="name" required 
+                  style="width: 100%; padding: 0.75rem; background: var(--bg-primary); color: var(--text-primary); border: 1px solid var(--accent); border-radius: 5px; font-size: 1rem;">
+              </div>
+
+              <div>
+                <label for="subject" class="text-secondary" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Sujet</label>
+                <input type="text" id="subject" name="subject" required 
+                  style="width: 100%; padding: 0.75rem; background: var(--bg-primary); color: var(--text-primary); border: 1px solid var(--accent); border-radius: 5px; font-size: 1rem;">
+              </div>
+
+              <div>
+                <label for="message" class="text-secondary" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Message</label>
+                <textarea id="message" name="message" rows="5" required 
+                  style="width: 100%; padding: 0.75rem; background: var(--bg-primary); color: var(--text-primary); border: 1px solid var(--accent); border-radius: 5px; font-size: 1rem; font-family: inherit; resize: vertical;"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-outline" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
+                Envoyer le message
+              </button>
+
+            </form>
+
+            <p id="formStatus" class="text-secondary" style="margin-top: 1rem; text-align: center; display: none;"></p>
+
+          </div>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div>
+          <div style="background: var(--bg-secondary); padding: 2rem; border-radius: 10px; border-left: 4px solid var(--secondary-accent);">
+            
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              
+              <div>
+                <p class="text-secondary" style="font-weight: bold; margin-bottom: 0.5rem;">
+                  <i class="fas fa-envelope"></i> Email
+                </p>
+                <a href="mailto:Tekomensah7@gmail.com" style="color: var(--accent); text-decoration: none; font-size: 1.1rem; transition: color 0.3s;">
+                  Tekomensah7@gmail.com
+                </a>
+              </div>
+
+              <div>
+                <p class="text-secondary" style="font-weight: bold; margin-bottom: 0.5rem;">
+                  <i class="fas fa-phone"></i> Téléphone
+                </p>
+                <a href="tel:+33695953854" style="color: var(--accent); text-decoration: none; font-size: 1.1rem; transition: color 0.3s;">
+                  +33 06 95 95 38 54
+                </a>
+              </div>
+
+              <div>
+                <p class="text-secondary" style="font-weight: bold; margin-bottom: 0.5rem;">
+                  <i class="fas fa-share-alt"></i> Réseaux sociaux
+                </p>
+                <div style="display: flex; gap: 1rem;">
+                  <a href="https://github.com/Mesoket/Teko.MENSAH" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="flex: 1; text-align: center;">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <a href="https://www.linkedin.com/in/teko-mensah-b5ab98325/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="flex: 1; text-align: center;">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-secondary" style="font-weight: bold; margin-bottom: 0.5rem;">
+                  <i class="fas fa-map-marker-alt"></i> Localisation
+                </p>
+                <p class="text-secondary">Île-de-France, France</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+   <!-- BOTTOM NAVIGATION -->
+  <section style="background: var(--bg-footer); padding: 3rem 2rem; text-align: center;">
+    <div class="container">
+      <h3 style="color: var(--accent); margin-bottom: 2rem;">Explorez d'autres sections</h3>
+      <a href="index.html" class="btn btn-primary">Accueil</a>
+      <a href="about.html" class="btn btn-primary">À propos</a>
+      <a href="projects.html" class="btn btn-primary">Projets</a>
+      <a href="skills.html" class="btn btn-primary">CV</a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <div class="container">
+      <p> Portfolio_Teko. Tous droits réservés. </p>
+    </div>
+  </footer>
+
+
+
+  <script>
+    // Simple form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.reset();
+    });
+  </script>
+
+
+</body>
+</html>
